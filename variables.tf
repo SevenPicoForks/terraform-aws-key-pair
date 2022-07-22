@@ -15,6 +15,12 @@ variable "generate_ssh_key" {
   description = "If set to `true`, new SSH key pair will be created and `ssh_public_key_file` will be ignored"
 }
 
+variable "write_ssh_key_to_file" {
+  type        = bool
+  default     = true
+  description = "If set to `true`, the key pair will be written to file."
+}
+
 variable "ssh_key_algorithm" {
   type        = string
   default     = "RSA"
